@@ -4,15 +4,10 @@ This is a Telegram bot that predicts the next 10 values of the 'Multiplier' colu
 
 ## Table of Contents
 
-- [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
-
-## Prerequisites
-
-List any prerequisites that are required to run this project.
 
 ## Installation
 
@@ -24,7 +19,9 @@ To use this bot, you'll need to have the following libraries installed:
 
 You can install them using pip:
 
-'''pip install pandas scikit-learn telebot
+```python
+pip install pandas scikit-learn telebot
+```
 
 ## Usage
 
