@@ -1,36 +1,42 @@
-# 1XBetCrash-Prediction
-## Description
-This project predicts the next 10 values of the "Multiplier" column of the "1XBetCrash.csv" file using multiple machine learning models. The models trained in this project include:
+# 1XBetCrash Prediction Bot
 
-Linear Regression
-Decision Tree Regression
-Random Forest Regression
-Multi-Layer Perceptron Regression
-The data is first loaded into a Pandas DataFrame, and the "Multiplier" column is extracted from it. The "Time" and "Multiplier" columns are dropped from the DataFrame, and the remaining data is normalized using StandardScaler. The data is then split into training and test sets using a 70-30 split ratio.
+This is a Telegram bot that predicts the next 10 values of the 'Multiplier' column in the '1XBetCrash.csv' dataset using multiple regression models.
 
-Afterwards, the multiple models are trained using the training data. Each model is used to predict the next 10 values of the "Multiplier" column, and the results are sent to the user via Telegram using the "/predict" command.
+## Table of Contents
+
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Prerequisites
+
+List any prerequisites that are required to run this project.
 
 ## Installation
-Clone the repository:
 
-bash
-Copy code
-git clone https://github.com/your_username/1XBetCrash-Prediction.git
-Install the required Python packages:
+To use this bot, you'll need to have the following libraries installed:
 
-Copy code
-pip install -r requirements.txt
-Add your Telegram bot API key in the bot = telebot.TeleBot('<YOUR API KEY HERE>') line of the code.
+- pandas
+- scikit-learn
+- telebot
+
+You can install them using pip:
+
+'''pip install pandas scikit-learn telebot
 
 ## Usage
-Start the Telegram bot by running the following command:
 
-css
-Copy code
-python main.py
-Open Telegram and search for your bot.
+To use this bot, you'll need to create a Telegram bot and obtain its API token. Once you have the API token, you can run the following command to start the bot:
 
-Send the "/predict" command to the bot.
 
-## Credits
-This project was created by Sheekovic.
+Once the bot is running, you can send it the `/predict` command to get the predictions.
+
+## Contributing
+
+Contributions are welcome! See `CONTRIBUTING.md` for details on how to get started.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
