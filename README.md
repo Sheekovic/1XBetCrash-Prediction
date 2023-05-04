@@ -32,7 +32,17 @@ Once the bot is running, you can send it the `/predict` command to get the predi
 
 ## Contributing
 
-Contributions are welcome! See `CONTRIBUTING.md` for details on how to get started.
+Contributions are always welcome! If you would like to contribute to this project, you can modify the `1XBetCrashUpdater.py` file to automatically update the `1XBetCrash.csv` file. This will help to strengthen the models that rely on the `Multiplier` column.
+
+To make a contribution, follow these steps:
+
+Fork the repository
+Clone the repository to your local machine
+Modify the `1XBetCrashUpdater.py` file to update the `1XBetCrash.csv` file
+Test your modifications to ensure they work as expected
+Commit your changes and push them to your forked repository
+Submit a pull request to have your changes reviewed and merged into the main repository.
+Thank you for your contribution!
 
 ## License
 
