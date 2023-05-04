@@ -1,4 +1,5 @@
-# 1XBetCrash-PredictionDescription
+# 1XBetCrash-Prediction
+## Description
 This project predicts the next 10 values of the "Multiplier" column of the "1XBetCrash.csv" file using multiple machine learning models. The models trained in this project include:
 
 Linear Regression
@@ -9,7 +10,7 @@ The data is first loaded into a Pandas DataFrame, and the "Multiplier" column is
 
 Afterwards, the multiple models are trained using the training data. Each model is used to predict the next 10 values of the "Multiplier" column, and the results are sent to the user via Telegram using the "/predict" command.
 
-Installation
+## Installation
 Clone the repository:
 
 bash
@@ -21,7 +22,7 @@ Copy code
 pip install -r requirements.txt
 Add your Telegram bot API key in the bot = telebot.TeleBot('<YOUR API KEY HERE>') line of the code.
 
-Usage
+## Usage
 Start the Telegram bot by running the following command:
 
 css
@@ -31,5 +32,5 @@ Open Telegram and search for your bot.
 
 Send the "/predict" command to the bot.
 
-Credits
-This project was created by Your Name.
+## Credits
+This project was created by Sheekovic.
