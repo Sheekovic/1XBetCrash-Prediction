@@ -41,40 +41,40 @@ Open your WSL terminal and run the following commands to install Python and the 
 
 1.✅ **Update package list**:
 
-    ```bash
+    
     sudo apt-get update
-    ```
+    
 
 2.✅ **Install Python 3.6 and pip**:
 
-    ```bash
+    
     sudo add-apt-repository ppa:deadsnakes/ppa
     sudo apt-get update
     sudo apt-get install python3.6 python3.6-venv python3.6-dev
     sudo apt-get install python3-pip
     pip3 install --upgrade pip
-    ```
+    
 
 3.✅ **Set up a virtual environment**:
 
-    ```bash
+    
     python3.6 -m venv venv
     source venv/bin/activate
-    ```
+    
 
 4.✅ **Install required libraries**:
 
-    ```bash
+    
     pip install pandas scikit-learn telebot
-    ```
+    
 
 ### ✅ Step 3: Clone the Repository
 
 If you haven't already, clone your project repository:
 
-    ```bash
+    
     git clone https://github.com/aa-sikkkk/FortuneTeller.git OR git clone https://github.com/Sheekovic/1XBetCrash-Prediction.git
-    ```
+    
 
 ### ✅  Step 4: Create and Configure the Telegram Bot
 
@@ -91,6 +91,9 @@ Update the ```1XBetCrashUpdater.py``` to extract the multiplier values from the 
 ### ✅ Step 5: Run the ```Crash.py``` file
 
 Once ```the Crash.py``` script is running, you can send it the /predict command to your bot to get the predictions for the next 10 values of the 'Multiplier' column.
+
+![Screenshot (23)](https://github.com/aa-sikkkk/FortuneTeller/assets/152005759/e62b1650-6379-4814-80c0-b35b875fe824)
+
 
 ## Contributing
 
