@@ -84,7 +84,7 @@ If you haven't already, clone your project repository:
 4.Follow the prompts to set the bot's name and username.
 5.Once created, @BotFather will provide you with an API token. Save this token.
 
- ```Update the```1XBetCrashUpdater.py``` to extract the multiplier values from the Crash Game ```
+Update the ```1XBetCrashUpdater.py``` to extract the multiplier values from the Crash Game ```
 
 ## RUN
 
