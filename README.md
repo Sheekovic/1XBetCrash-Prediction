@@ -101,12 +101,13 @@ Contributions are always welcome! If you would like to contribute to this projec
 
 ### ℹ️ℹ️  Steps to Contribute
 
-1.Fork the repository.
-2.Clone the forked repository to your local machine.
-3.Modify the ```1XBetCrashUpdater.py``` file to update the ```1XBetCrash.csv``` file.
-4.Test your modifications to ensure they work as expected.
-5.Commit your changes and push them to your forked repository.
-6.Submit a pull request to have your changes reviewed and merged into the main repository.
+- Fork the repository.
+- Clone the forked repository to your local machine.
+- Modify the ```1XBetCrashUpdater.py``` file to update the ```1XBetCrash.csv``` file.
+- Test your modifications to ensure they work as expected.
+- Commit your changes and push them to your forked repository.
+- Submit a pull request to have your changes reviewed and merged into the main repository.
+
 Thank you for your contributions!
 
 ## License
