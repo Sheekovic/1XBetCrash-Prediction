@@ -1,24 +1,26 @@
 import time
 from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 
 # Define the URL of the website
 url = "https://1xbet.com/en/allgamesentrance/crash"
+chrome_options = Options()
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--no-sandbox') 
+chrome_options.add_argument('--disable-dev-shm-usage') 
 
-# Define the path to the chromedriver executable
-chromedriver_path = '/path/to/chromedriver'
 
-# Initialize the webdriver with headless mode
-options = webdriver.ChromeOptions()
-options.add_argument('headless')
-driver = webdriver.Chrome(executable_path=chromedriver_path, options=options)
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
 
 while True:
     try:
         # Navigate to the website
         driver.get(url)
-
-        # Wait for the multiplier element to appear
-        multiplier_element = driver.find_element_by_css_selector('.c-events-table__multiplier')
+        multiplier_element = driver.find_element(By.CSS_SELECTOR,'.c-events-table__multiplier')
+        
         while not multiplier_element.is_displayed():
             time.sleep(0.1)
 
@@ -28,9 +30,5 @@ while True:
 
     except Exception as e:
         print(f"Error: {e}")
-
-    # Wait for 1 second before checking again
     time.sleep(1)
-
-# Quit the webdriver
 driver.quit()
