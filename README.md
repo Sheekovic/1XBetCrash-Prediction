@@ -48,21 +48,14 @@ Open your WSL terminal and run the following commands to install Python and the 
 2.✅ **Install Python 3.6 and pip**:
 
     
-    sudo add-apt-repository ppa:deadsnakes/ppa
-    sudo apt-get update
-    sudo apt-get install python3.6 python3.6-venv python3.6-dev
+   
     sudo apt-get install python3-pip
     pip3 install --upgrade pip
     
 
-3.✅ **Set up a virtual environment**:
+  
 
-    
-    python3.6 -m venv venv
-    source venv/bin/activate
-    
-
-4.✅ **Install required libraries**:
+3.✅ **Install required libraries**:
 
     
     pip install pandas scikit-learn telebot
@@ -73,7 +66,7 @@ Open your WSL terminal and run the following commands to install Python and the 
 If you haven't already, clone your project repository:
 
     
-    git clone https://github.com/aa-sikkkk/FortuneTeller.git OR git clone https://github.com/Sheekovic/1XBetCrash-Prediction.git
+    git clone https://github.com/aa-sikkkk/FortuneTeller.git
     
 
 ### ✅  Step 4: Create and Configure the Telegram Bot
