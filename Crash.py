@@ -38,7 +38,7 @@ nn_reg = MLPRegressor(hidden_layer_sizes=(100,), max_iter=1000, random_state=123
 nn_reg.fit(train_X, train_y)
 
 # Create a Telegram bot object
-bot = telebot.TeleBot('5917307553:AAFD7RgRMF3supp-RdRhFkR9t-E9G-4NRLU')
+bot = telebot.TeleBot('YOUR_TOKEN')
 
 # Define the handler function for the '/predict' command
 @bot.message_handler(commands=['predict'])
